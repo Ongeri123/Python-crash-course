@@ -16,6 +16,9 @@ class Human():
 
     def  another_one(self):
         print('another one was called')
+        print('name:', self.name)
+        print('gender:', self.gender)
+        print('ribs:', self.ribs)
 
 
 adam = Human(name= 'Adam', gender= 'male')
@@ -32,3 +35,5 @@ print ('name:', eve.name)
 print ('gender:', eve.gender)
 print ('ribs:', eve.ribs)
 
+jane = Human(name='Jane', gender='female')
+jane.another_one()
