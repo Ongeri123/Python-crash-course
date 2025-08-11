@@ -33,10 +33,18 @@ class Human():
         write_file(f_name='log.txt', txt =f'at{now} got name from adam')
         return self.name
 
+    @classmethod
+    def get_general_info(cls):
+        print('Species',cls.species)
+        print('Species',cls.genus)
+        print('Species', cls.count)
+
 
 adam=Human(name = 'Adam', gender = 'male')
 eve = Human(name = 'Eve', gender= 'female')
 
-print('adam species', adam.species)
-print('eve species', eve.species)
-print('Total Humans', Human.count)
+# print('adam species', adam.species)
+# print('eve species', eve.species)
+# print('Total Humans', Human.count)
+Human.get_general_info()
+eve.get_general_info()
